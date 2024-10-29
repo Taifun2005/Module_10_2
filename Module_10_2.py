@@ -40,6 +40,7 @@ class Knight(threading.Thread):
         while power_100:
             power_100 -= self.power
             day += 1
+            time.sleep(0.3)
             print(f"{self.name} сражается {day}..., осталось {power_100} воинов. \n")
         print(f"{self.name} одержал победу спустя {day} дней(дня)!")
 
